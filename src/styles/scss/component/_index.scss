@@ -1,0 +1,131 @@
+body {
+    height: 100%;
+    // overflow: hidden;
+    display: grid;
+    grid-template-columns: 1;    
+    grid-template-rows: repeat(5);        
+}
+
+.Header {
+    grid-row: 1 / 2;
+    background-color: #c3c49e;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__logo{
+        & img{
+          width: 200px;  
+        }
+    }
+    &__text{
+        font-family: 'Russo One', sans-serif;
+        letter-spacing: 5px;
+        color: #000;
+        font-size: 50px;
+    }       
+}
+
+.Navbar {    
+    grid-row: 2 / 3;
+    background-color: #000;
+
+    &__container{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    &__text {
+        color: #fff;
+        text-decoration: none;           
+        font-family: 'Poiret One', cursive;        
+        font-size: 28px;
+        letter-spacing: 2px;   
+    }
+}
+
+.Article {
+    grid-row: 4 / 5;
+    background-color:#d3d3d3;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+    & h5 {
+        text-align: center;
+        color: #284b63;
+        font-family: 'Russo One', sans-serif;
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+    & p {
+        color: #000;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 25px;
+        text-align: justify;
+        & img {
+            width: 400px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__img {
+        margin: 15px 0px;
+        display: flex;
+        justify-content: space-around;
+        & img {
+        width: 500px;
+    
+        }
+    }
+}
+
+.Footer {    
+    grid-row: 5 / 6;
+    background-color: #9b9b9b;
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding: 20px 50px;
+
+    &__logo{
+        width: 150px;
+    }
+    &__brands{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 40px;        
+        & p {
+          text-align: center;
+          padding-bottom: 20px;  
+        }                
+        & img {
+            height: auto;
+            width: 150px;
+        }
+        &--container {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 130px;
+            align-items: center;
+            justify-content: center;
+        }        
+    }
+    &__socialmedia{        
+        flex-direction: row;
+        text-align: center;
+        & p {
+            padding-bottom: 20px;
+        }
+        & img {
+            width: 40px;
+        }
+        &--container {
+            display: flex;
+            gap: 20px;
+        }       
+    }
+}
