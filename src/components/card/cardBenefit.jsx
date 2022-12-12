@@ -35,30 +35,3 @@ const CardBenefit = () => {
 }
 
 export default CardBenefit
-
-// const CardBenefit = () => {
-    
-//     const [Benef, setBenef] = useState(null)
-
-//     useEffect (() => {
-//         const dataBenefit = async () => {
-//             try {
-//                 const request = await axios.get (URLbenefit);
-//                 console.log(request.data);
-//                 return request.data;
-                
-//             } catch (error) {
-//                 console.log(error);
-//             } 
-//     }
-
-//     dataBenefit().then(data => setBenef(data));
-
-//     },[]) 
-
-//     return ( 
-//     );
-//   }
-  
-//   export default CardBenefit
-  
