@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState} from "react";
 
 
-const URLdior = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=dior'
+const URLdior = 'https://makeup-api.herokuapp.com/api/v1/products.json?brand=dior'
 
 const CardDior = () => {
     const [dior, setDior] = useState([]);

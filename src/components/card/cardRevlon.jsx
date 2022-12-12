@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState} from "react";
 
 
-const URLrevlon = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=revlon'
+const URLrevlon = 'https://makeup-api.herokuapp.com/api/v1/products.json?brand=revlon'
 
 const CardRevlon = () => {
     const [revlon, setRevlon] = useState([]);

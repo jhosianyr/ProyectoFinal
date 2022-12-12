@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState} from "react";
 
 
-const URLnyx = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=nyx'
+const URLnyx = 'https://makeup-api.herokuapp.com/api/v1/products.json?brand=nyx'
 
 const CardNyx = () => {
     const [nyx, setNyx] = useState([]);

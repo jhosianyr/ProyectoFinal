@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState} from "react";
 
 
-const URLmaybelline = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline'
+const URLmaybelline = 'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline'
 
 const CardMaybelline = () => {
     const [maybe, setMaybe] = useState([]);
