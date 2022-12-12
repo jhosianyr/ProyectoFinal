@@ -6,6 +6,12 @@ body {
     grid-template-rows: repeat(5);        
 }
 
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
 .Header {
     grid-row: 1 / 2;
     background-color: #c3c49e;
@@ -24,6 +30,12 @@ body {
         color: #000;
         font-size: 50px;
     }       
+}
+
+nav{
+    position: sticky;
+    top: 118px;
+    z-index: 1000;
 }
 
 .Navbar {    

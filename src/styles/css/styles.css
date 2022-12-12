@@ -83,6 +83,12 @@ body {
   grid-template-rows: repeat(5);
 }
 
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
 .Header {
   grid-row: 1/2;
   background-color: #c3c49e;
@@ -99,6 +105,12 @@ body {
   letter-spacing: 5px;
   color: #000;
   font-size: 50px;
+}
+
+nav {
+  position: sticky;
+  top: 118px;
+  z-index: 1000;
 }
 
 .Navbar {
@@ -224,9 +236,9 @@ body {
 .slide {
   display: flex;
   transform: translate3d(0, 0, 0);
-  transition: all 600ms;
+  transition: all 3000ms;
   animation-name: autoplay;
-  animation-duration: 6.5s;
+  animation-duration: 15s;
   animation-direction: alternate;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
